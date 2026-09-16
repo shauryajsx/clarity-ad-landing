@@ -298,7 +298,7 @@ button, input, select, textarea {
 }
 
 .brand-logo {
-  height: 48px;
+  height: 42px;
   width: auto;
   object-fit: contain;
   mix-blend-mode: multiply;
@@ -2877,7 +2877,7 @@ button, input, select, textarea {
   }
 
   .navbar-inner {
-    height: 70px;
+    height: 64px;
     gap: 8px;
     width: 100%;
     justify-content: space-between;
@@ -2892,9 +2892,9 @@ button, input, select, textarea {
   }
 
   .brand-logo {
-    height: 52px;
+    height: 40px;
     width: auto;
-    max-width: 145px;
+    max-width: 120px;
     object-fit: contain;
   }
 
@@ -3210,8 +3210,8 @@ button, input, select, textarea {
 
 @media (max-width: 480px) {
   .brand-logo {
-    height: 48px;
-    max-width: 135px;
+    height: 35px;
+    max-width: 105px;
   }
 
   .hero-title {
