@@ -73,11 +73,17 @@ html {
   color: var(--text-dark);
   background-color: var(--bg-white);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
 }
 
 body {
   line-height: 1.55;
   overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
   background-color: var(--bg-white);
 }
 
@@ -1206,6 +1212,10 @@ button, input, select, textarea {
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-light);
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  max-width: 100%;
+  display: block;
   box-shadow: var(--shadow-card);
 }
 
@@ -1909,9 +1919,49 @@ button, input, select, textarea {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .site-header,
+  .navbar {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .navbar-inner {
+    height: 60px;
+    gap: 8px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .brand-wrapper {
+    gap: 6px;
+    min-width: 0;
+    flex-shrink: 1;
+  }
+
+  .brand-logo {
+    height: 34px;
+    width: auto;
+    max-width: 120px;
+    object-fit: contain;
+  }
+
+  .brand-product-name,
   .brand-divider,
   .brand-product-sub {
     display: none;
+  }
+
+  .nav-actions {
+    gap: 6px;
+    flex-shrink: 0;
   }
 
   .nav-actions .btn-outline {
@@ -1919,8 +1969,17 @@ button, input, select, textarea {
   }
 
   .nav-actions .btn-teal {
-    padding: 8px 14px;
-    font-size: 13px;
+    padding: 7px 11px;
+    font-size: 12px;
+    gap: 4px;
+    white-space: nowrap;
+  }
+
+  .mobile-menu-toggle {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    flex-shrink: 0;
   }
 
   .top-announcement {
@@ -1990,13 +2049,28 @@ button, input, select, textarea {
   }
 
   .hero-title {
-    font-size: 32px;
-    line-height: 1.15;
+    font-size: 28px;
+    line-height: 1.2;
     word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .hero-visual-card {
+    padding: 18px 14px;
+    border-radius: var(--radius-lg);
+  }
+
+  .proof-logos-grid {
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .proof-logos-grid img {
+    height: 20px;
   }
 
   .hero-subtitle {
-    font-size: 15px;
+    font-size: 14.5px;
   }
 
   .visual-card-topbar {
@@ -2012,7 +2086,7 @@ button, input, select, textarea {
   }
 
   .section-title {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .section-heading-row {
@@ -2040,6 +2114,7 @@ button, input, select, textarea {
     border-radius: var(--radius-md);
     padding: 10px;
     gap: 10px;
+    width: 100%;
   }
 
   .hero-input-group input {
@@ -2058,5 +2133,30 @@ button, input, select, textarea {
 
   .cta-banner-actions .btn {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 25px;
+    line-height: 1.22;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .nav-actions .btn-teal {
+    padding: 6px 10px;
+    font-size: 11.5px;
+  }
+
+  .nav-actions .btn-teal svg {
+    display: none;
+  }
+
+  .sticky-bar-actions .btn {
+    font-size: 12px;
+    padding: 10px 4px;
   }
 }
