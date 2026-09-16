@@ -1200,6 +1200,268 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
+   SECTION: ONE DEVICE, FOUR CARE ENVIRONMENTS (Clinical Workflow Tabs)
+   ========================================================================== */
+.environments-section {
+  padding: 95px 0;
+  background-color: #ffffff;
+  border-top: 1px solid var(--border-light);
+}
+
+.environments-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 40px;
+}
+
+.env-tabs-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--bg-slate);
+  padding: 6px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-light);
+  max-width: 860px;
+  margin: 0 auto 40px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.env-tabs-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.env-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 20px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition-smooth);
+}
+
+.env-tab-btn svg {
+  color: var(--text-muted);
+  transition: var(--transition-smooth);
+}
+
+.env-tab-btn:hover {
+  color: var(--teal-primary);
+  background: rgba(16, 132, 143, 0.08);
+}
+
+.env-tab-btn.active {
+  color: #ffffff;
+  background: var(--teal-primary);
+  box-shadow: 0 4px 14px rgba(16, 132, 143, 0.28);
+}
+
+.env-tab-btn.active svg {
+  color: #ffffff;
+}
+
+.env-tab-panel {
+  display: none;
+  animation: fadeInEnv 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.env-tab-panel.active {
+  display: block;
+}
+
+@keyframes fadeInEnv {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.env-content-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.env-badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--teal-primary);
+  background: #e6f6f7;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 14px;
+}
+
+.env-headline {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.env-lead-text {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.env-features-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.env-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.env-feature-item svg {
+  color: var(--teal-primary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.env-metric-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #15803d;
+  margin-bottom: 24px;
+}
+
+.env-visual-card {
+  background: linear-gradient(145deg, #ffffff 0%, #f4f8fb 100%);
+  border: 1px solid #e4ecf3;
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  box-shadow: var(--shadow-card);
+  position: relative;
+}
+
+.env-visual-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.env-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #0d9488;
+  background: #f0fdfa;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.env-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
+}
+
+.env-vitals-display-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.env-vital-box {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  box-shadow: var(--shadow-sm);
+}
+
+.env-vital-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.env-vital-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.env-vital-unit {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.env-vital-val {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.val-green { color: #0d9488; }
+.val-blue { color: #0284c7; }
+.val-purple { color: #7c3aed; }
+.val-amber { color: #d97706; }
+
+.env-visual-footer {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
    COMPETITOR COMPARISON TABLE (High-Converting Section from PDF Slide 6)
    ========================================================================== */
 .comparison-section {
@@ -2147,6 +2409,11 @@ button, input, select, textarea {
     width: 100%;
     justify-content: center;
   }
+
+  .env-content-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2405,6 +2672,31 @@ button, input, select, textarea {
   /* Specs Section on Mobile */
   .specs-section {
     padding: 60px 0;
+  }
+
+  /* Environments Section on Mobile */
+  .environments-section {
+    padding: 60px 0;
+  }
+
+  .env-tabs-nav {
+    justify-content: flex-start;
+    max-width: 100%;
+    padding: 4px;
+    border-radius: 12px;
+  }
+
+  .env-tab-btn {
+    padding: 8px 14px;
+    font-size: 12.5px;
+  }
+
+  .env-headline {
+    font-size: 23px;
+  }
+
+  .env-visual-card {
+    padding: 20px 16px;
   }
 
   .specs-tabs-nav {

@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initMobileMenu();
   initSpecsTabs();
+  initEnvironmentTabs();
 });
 
 /* ==========================================================================
@@ -392,4 +393,44 @@ function initSpecsTabs() {
     });
   });
 }
+
+/* ==========================================================================
+   7. CARE ENVIRONMENTS TAB SWITCHER
+   ========================================================================== */
+function initEnvironmentTabs() {
+  const tabButtons = document.querySelectorAll('.env-tab-btn');
+  const tabPanels = document.querySelectorAll('.env-tab-panel');
+
+  if (!tabButtons.length || !tabPanels.length) return;
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetTabId = btn.getAttribute('data-tab');
+
+      // Update button active state & aria-selected
+      tabButtons.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+
+      // Update panels active state
+      tabPanels.forEach(panel => {
+        panel.classList.remove('active');
+      });
+
+      const activePanel = document.getElementById(targetTabId);
+      if (activePanel) {
+        activePanel.classList.add('active');
+      }
+
+      // Track interaction for analytics
+      if (typeof trackConversionEvent === 'function') {
+        trackConversionEvent('view_environment_tab', { environment: targetTabId });
+      }
+    });
+  });
+}
+
 
