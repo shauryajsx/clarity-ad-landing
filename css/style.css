@@ -2793,19 +2793,62 @@ button, input, select, textarea {
   }
 
   .visibility-hub-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .vital-center-col {
-    order: -1;
+    display: contents;
   }
 
-  .vital-col-left,
-  .vital-col-right {
+  .visibility-device-halo-wrap {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .vital-col-left {
+    order: 2;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
+  }
+
+  .vital-col-right {
+    order: 3;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .vital-temp-wrap {
+    order: 4;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .vital-temp-wrap .vital-callout-card {
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 20px;
+  }
+
+  .vital-temp-wrap .vital-icon-badge {
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .vital-temp-wrap .vital-text-wrap {
+    flex: 1;
   }
 
   .vital-col-left .vital-callout-card,
@@ -3102,6 +3145,10 @@ button, input, select, textarea {
   .visibility-divider-tagline::before,
   .visibility-divider-tagline::after {
     width: 24px;
+  }
+
+  .visibility-hub-grid {
+    gap: 12px;
   }
 
   .vital-col-left,
