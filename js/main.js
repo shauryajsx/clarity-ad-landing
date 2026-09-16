@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initSpecsTabs();
   initEnvironmentTabs();
+  initPosterModal();
+  initVitalCardsInteractivity();
 });
 
 /* ==========================================================================
@@ -279,6 +281,60 @@ function initModalHandling() {
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeModal();
+  });
+}
+
+function openPosterModal() {
+  const modal = document.getElementById('posterInfographicModal');
+  if (modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    if (typeof trackConversionEvent === 'function') {
+      trackConversionEvent('view_poster_infographic', { source: 'visibility_section' });
+    }
+  }
+}
+
+function closePosterModal() {
+  const modal = document.getElementById('posterInfographicModal');
+  if (modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
+function initPosterModal() {
+  const openBtn = document.getElementById('btnOpenPosterModal');
+  if (openBtn) openBtn.addEventListener('click', openPosterModal);
+
+  const closeBtn = document.getElementById('posterModalCloseBtn');
+  if (closeBtn) closeBtn.addEventListener('click', closePosterModal);
+
+  const overlay = document.getElementById('posterInfographicModal');
+  if (overlay) {
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closePosterModal();
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closePosterModal();
+  });
+}
+
+function initVitalCardsInteractivity() {
+  const cards = document.querySelectorAll('.vital-callout-card');
+  if (!cards.length) return;
+
+  cards.forEach((card) => {
+    card.addEventListener('click', () => {
+      cards.forEach((c) => c.classList.remove('active'));
+      card.classList.add('active');
+      const vitalKey = card.getAttribute('data-vital');
+      if (typeof trackConversionEvent === 'function') {
+        trackConversionEvent('inspect_vital_parameter', { vital: vitalKey });
+      }
+    });
   });
 }
 

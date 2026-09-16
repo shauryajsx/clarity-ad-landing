@@ -95,6 +95,7 @@
 
       <nav>
         <ul class="nav-links">
+          <li><a href="#visibility">Vitals</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#roi-bento">Clinical ROI</a></li>
           <li><a href="#workflow">How It Works</a></li>
@@ -293,6 +294,241 @@
           </div>
         </div>
 
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 1.5: COMPLETE CLINICAL VISIBILITY (One Monitor. Every Vital. Hub)
+       Exact Infographic Blueprint from Clarity Medical Official Showcase
+       ========================================================================== -->
+  <section class="visibility-section" id="visibility">
+    <div class="container">
+
+      <!-- Header matching poster -->
+      <div class="visibility-header">
+        <div class="visibility-brand-title">Recobro Vigile<sup>®</sup></div>
+        <h2 class="visibility-main-headline">Complete Clinical Visibility.</h2>
+        <div class="visibility-divider-tagline">One Monitor. Every Vital.</div>
+        <p class="section-subtitle">
+          Engineered to capture the entire spectrum of high-acuity physiological markers in an ultra-compact 300g wireless chassis. Zero disconnects from field transit to hospital bedside.
+        </p>
+      </div>
+
+      <!-- Radial Hub Diagram (Left 3 Vitals, Center Device + TEMP, Right 3 Vitals) -->
+      <div class="visibility-hub-grid">
+
+        <!-- Left Column: ECG, SpO2, NIBP -->
+        <div class="vital-callout-col vital-col-left">
+
+          <!-- 1. ECG -->
+          <div class="vital-callout-card" data-vital="ecg" id="vital-card-ecg">
+            <div class="vital-text-wrap">
+              <div class="vital-title-code">ECG</div>
+              <div class="vital-desc-short">Real-time ECG monitoring with accurate heart rate and ST analysis.</div>
+              <span class="vital-spec-tag">3/5-Lead • Arrhythmia Detect</span>
+            </div>
+            <div class="vital-icon-badge" aria-label="ECG">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- 2. SpO2 -->
+          <div class="vital-callout-card" data-vital="spo2" id="vital-card-spo2">
+            <div class="vital-text-wrap">
+              <div class="vital-title-code">SpO₂</div>
+              <div class="vital-desc-short">Continuous oxygen saturation monitoring for better respiratory assessment.</div>
+              <span class="vital-spec-tag">0–100% • Low Perfusion &lt;0.1%</span>
+            </div>
+            <div class="vital-icon-badge" aria-label="SpO2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v20" />
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- 3. NIBP -->
+          <div class="vital-callout-card" data-vital="nibp" id="vital-card-nibp">
+            <div class="vital-text-wrap">
+              <div class="vital-title-code">NIBP</div>
+              <div class="vital-desc-short">Non-invasive blood pressure monitoring for reliable readings.</div>
+              <span class="vital-spec-tag">Systolic / Diastolic / MAP</span>
+            </div>
+            <div class="vital-icon-badge" aria-label="NIBP">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="4" width="14" height="12" rx="2" />
+                <path d="M9 16v3a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-3" />
+                <circle cx="12" cy="10" r="2" />
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Center Column: Recobro Vigile Unit + TEMP Vital -->
+        <div class="vital-center-col">
+          <div class="visibility-device-halo-wrap">
+            <div class="visibility-halo-ring"></div>
+            <img src="assets/images/recobro-device-front.png" alt="Recobro Vigile Patient Monitor with 7 Vitals Display" class="visibility-device-img">
+          </div>
+
+          <!-- 4. TEMP (Directly under the device as in the poster) -->
+          <div class="vital-temp-wrap">
+            <div class="vital-callout-card" data-vital="temp" id="vital-card-temp">
+              <div class="vital-icon-badge" aria-label="TEMP">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" />
+                  <circle cx="11.5" cy="17.5" r="1.5" />
+                </svg>
+              </div>
+              <div class="vital-text-wrap">
+                <div class="vital-title-code">TEMP</div>
+                <div class="vital-desc-short">Accurate temperature monitoring for early detection of clinical changes.</div>
+                <span class="vital-spec-tag">Dual-Channel YSI 400/700 • ±0.1°C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: IBP, RR, EtCO2 -->
+        <div class="vital-callout-col vital-col-right">
+
+          <!-- 5. IBP -->
+          <div class="vital-callout-card" data-vital="ibp" id="vital-card-ibp">
+            <div class="vital-icon-badge" aria-label="IBP">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 8c3-3 6-3 9 0s6 3 9 0" />
+                <path d="M2 13c3-3 6-3 9 0s6 3 9 0" />
+                <line x1="2" y1="18" x2="22" y2="18" />
+              </svg>
+            </div>
+            <div class="vital-text-wrap">
+              <div class="vital-title-code">IBP</div>
+              <div class="vital-desc-short">Invasive blood pressure monitoring for critical care accuracy.</div>
+              <span class="vital-spec-tag">Dual-Line ART / CVP / PAP</span>
+            </div>
+          </div>
+
+          <!-- 6. RR -->
+          <div class="vital-callout-card" data-vital="rr" id="vital-card-rr">
+            <div class="vital-icon-badge" aria-label="RR">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v18" />
+                <path d="M12 8c-3.5 0-6.5 1.5-6.5 5.5s3 5.5 6.5 5.5" />
+                <path d="M12 8c3.5 0 6.5 1.5 6.5 5.5s-3 5.5-6.5 5.5" />
+              </svg>
+            </div>
+            <div class="vital-text-wrap">
+              <div class="vital-title-code">RR</div>
+              <div class="vital-desc-short">Respiration rate monitoring to assess breathing pattern and trends.</div>
+              <span class="vital-spec-tag">0–150 rpm • Apnea Surveillance</span>
+            </div>
+          </div>
+
+          <!-- 7. EtCO2 -->
+          <div class="vital-callout-card" data-vital="etco2" id="vital-card-etco2">
+            <div class="vital-icon-badge" aria-label="EtCO2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v14" />
+                <path d="M8 7c-2.5 0-5 1.5-5 4.5S5.5 16 8 16h4V7H8z" />
+                <path d="M16 7c2.5 0 5 1.5 5 4.5S18.5 16 16 16h-4V7h4z" />
+                <circle cx="12" cy="19" r="1.5" />
+              </svg>
+            </div>
+            <div class="vital-text-wrap">
+              <div class="vital-title-code">EtCO₂</div>
+              <div class="vital-desc-short">End-tidal CO₂ monitoring for ventilation and respiratory efficiency.</div>
+              <span class="vital-spec-tag">Mainstream / Sidestream IR</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom 4 Feature Value Pillars (From Reference Poster) -->
+      <div class="visibility-pillars-grid">
+
+        <div class="visibility-pillar-card">
+          <div class="pillar-icon-circle">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+            </svg>
+          </div>
+          <div>
+            <div class="pillar-title">Compact & Portable</div>
+            <div class="pillar-subtitle">Care anywhere, anytime.</div>
+          </div>
+        </div>
+
+        <div class="visibility-pillar-card">
+          <div class="pillar-icon-circle">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="18" cy="5" r="3" />
+              <circle cx="6" cy="12" r="3" />
+              <circle cx="18" cy="19" r="3" />
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+            </svg>
+          </div>
+          <div>
+            <div class="pillar-title">Multi-Parameter Monitoring</div>
+            <div class="pillar-subtitle">All essential vitals in one device.</div>
+          </div>
+        </div>
+
+        <div class="visibility-pillar-card">
+          <div class="pillar-icon-circle">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <polyline points="9 12 11 14 15 10" />
+            </svg>
+          </div>
+          <div>
+            <div class="pillar-title">Clear. Accurate. Reliable.</div>
+            <div class="pillar-subtitle">Trusted data for confident decisions.</div>
+          </div>
+        </div>
+
+        <div class="visibility-pillar-card">
+          <div class="pillar-icon-circle">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="4" />
+              <path d="M12 8v8M8 12h8" />
+            </svg>
+          </div>
+          <div>
+            <div class="pillar-title">Built for Every Setting</div>
+            <div class="pillar-subtitle">From ICU to transport and beyond.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Action Bar -->
+      <div class="visibility-cta-bar">
+        <button class="btn btn-teal open-quote-modal">
+          Request Institutional Quote & Clinical Demo
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </button>
+        <button class="btn btn-outline" id="btnOpenPosterModal">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            <line x1="11" y1="8" x2="11" y2="14" />
+            <line x1="8" y1="11" x2="14" y2="11" />
+          </svg>
+          View Full Poster Infographic
+        </button>
       </div>
 
     </div>
@@ -1919,6 +2155,34 @@
             <line x1="5" y1="12" x2="19" y2="12" />
             <polyline points="12 5 19 12 12 19" />
           </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       OFFICIAL POSTER INFOGRAPHIC LIGHTBOX MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="posterInfographicModal" role="dialog" aria-modal="true">
+    <div class="modal-card poster-modal-card">
+      <button class="modal-close-btn" id="posterModalCloseBtn" aria-label="Close poster modal">✕</button>
+      <div style="margin-bottom: 16px; text-align: left;">
+        <span class="section-tag" style="margin-bottom: 6px;">OFFICIAL CLARITY INFOGRAPHIC</span>
+        <h3 style="font-size: 20px; font-weight: 800; color: var(--text-dark); margin: 6px 0 4px;">Recobro Vigile® Complete Clinical Visibility</h3>
+        <p style="font-size: 13px; color: var(--text-secondary); margin: 0;">High-resolution technical poster diagram — One Monitor. Every Vital.</p>
+      </div>
+      <img src="assets/images/recobro-complete-visibility.jpg" alt="Official Recobro Vigile Clinical Visibility Poster" class="poster-modal-img">
+      <div style="margin-top: 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+        <a href="assets/images/recobro-complete-visibility.jpg" download="Recobro-Vigile-Clinical-Visibility.jpg" class="btn btn-outline btn-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Download Official Poster (HD)
+        </a>
+        <button class="btn btn-teal btn-sm open-quote-modal" onclick="document.getElementById('posterInfographicModal').classList.remove('active')">
+          Request Department Pricing &rarr;
         </button>
       </div>
     </div>

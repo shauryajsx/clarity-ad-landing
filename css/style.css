@@ -745,6 +745,373 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
+   SECTION: COMPLETE CLINICAL VISIBILITY (One Monitor. Every Vital. Infographic Hub)
+   ========================================================================== */
+.visibility-section {
+  padding: 95px 0;
+  background: radial-gradient(circle at 50% 38%, #eef7fc 0%, #f9fcfe 55%, #ffffff 85%);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.visibility-section::before {
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 750px;
+  height: 750px;
+  background: radial-gradient(circle, rgba(16, 132, 143, 0.06) 0%, transparent 68%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.visibility-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 48px;
+  position: relative;
+  z-index: 1;
+}
+
+.visibility-brand-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #071f2c;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 6px;
+}
+
+.visibility-brand-title sup {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--teal-primary);
+  top: -0.6em;
+}
+
+.visibility-main-headline {
+  font-size: 32px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #0284c7 0%, #0d9488 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.visibility-divider-tagline {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0d3b53;
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+}
+
+.visibility-divider-tagline::before,
+.visibility-divider-tagline::after {
+  content: '';
+  display: inline-block;
+  width: 48px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #0284c7);
+  border-radius: 2px;
+}
+
+.visibility-divider-tagline::after {
+  background: linear-gradient(90deg, #0284c7, transparent);
+}
+
+.visibility-hub-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 36px;
+  max-width: 1160px;
+  margin: 0 auto 40px;
+}
+
+/* Left & Right Vitals Columns */
+.vital-callout-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.vital-callout-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  border: 1.5px solid #e1ebf4;
+  border-radius: var(--radius-lg);
+  padding: 18px 20px;
+  box-shadow: 0 4px 18px rgba(7, 31, 44, 0.05);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  cursor: pointer;
+}
+
+.vital-callout-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--teal-primary);
+  box-shadow: 0 8px 24px rgba(16, 132, 143, 0.16);
+  background: #ffffff;
+}
+
+.vital-callout-card.active {
+  border-color: var(--teal-primary);
+  box-shadow: 0 0 0 3px rgba(16, 132, 143, 0.2), 0 8px 24px rgba(16, 132, 143, 0.16);
+  background: #ffffff;
+}
+
+/* On Left side, text on left, icon on right (facing the device) */
+.vital-col-left .vital-callout-card {
+  text-align: right;
+  flex-direction: row;
+}
+
+.vital-col-left .vital-text-wrap {
+  order: 1;
+  flex: 1;
+}
+
+.vital-col-left .vital-icon-badge {
+  order: 2;
+}
+
+/* On Right side, icon on left (facing the device), text on right */
+.vital-col-right .vital-callout-card {
+  text-align: left;
+  flex-direction: row;
+}
+
+.vital-col-right .vital-text-wrap {
+  flex: 1;
+}
+
+.vital-icon-badge {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f7fb 100%);
+  border: 2px solid #bfdbfe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.12);
+  color: #0284c7;
+  transition: var(--transition-smooth);
+}
+
+.vital-icon-badge svg {
+  width: 28px;
+  height: 28px;
+}
+
+.vital-callout-card:hover .vital-icon-badge {
+  transform: scale(1.08);
+  border-color: var(--teal-primary);
+  color: var(--teal-primary);
+  box-shadow: 0 0 0 5px rgba(16, 132, 143, 0.14);
+}
+
+.vital-title-code {
+  font-size: 20px;
+  font-weight: 800;
+  color: #071f2c;
+  line-height: 1.2;
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+
+.vital-desc-short {
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.45;
+  margin-bottom: 6px;
+}
+
+.vital-spec-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #0284c7;
+  background: #e0f2fe;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Center Column with Device Visual and TEMP vital */
+.vital-center-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.visibility-device-halo-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.visibility-halo-ring {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  border: 1.5px dashed rgba(2, 132, 199, 0.28);
+  pointer-events: none;
+  animation: rotateHalo 60s linear infinite;
+}
+
+.visibility-halo-ring::before {
+  content: '';
+  position: absolute;
+  inset: 28px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(16, 132, 143, 0.18);
+}
+
+@keyframes rotateHalo {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.visibility-device-img {
+  position: relative;
+  z-index: 2;
+  width: 250px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(7, 31, 44, 0.22), 0 4px 16px rgba(16, 132, 143, 0.15);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.visibility-device-img:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+/* Bottom Center TEMP Vital Card */
+.vital-temp-wrap {
+  margin-top: 14px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.vital-temp-wrap .vital-callout-card {
+  text-align: center;
+  flex-direction: column;
+  padding: 16px 20px;
+  gap: 10px;
+}
+
+.vital-temp-wrap .vital-icon-badge {
+  margin: 0 auto;
+}
+
+/* Bottom 4 Feature Value Pillars */
+.visibility-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1160px;
+  margin: 30px auto 0;
+  padding-top: 36px;
+  border-top: 1px solid #e2e8f0;
+  position: relative;
+  z-index: 1;
+}
+
+.visibility-pillar-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 18px 16px;
+  box-shadow: 0 2px 10px rgba(11, 21, 35, 0.03);
+  transition: var(--transition-smooth);
+}
+
+.visibility-pillar-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--teal-primary);
+  box-shadow: var(--shadow-card);
+}
+
+.pillar-icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #e6f6f7;
+  color: var(--teal-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: var(--transition-smooth);
+}
+
+.visibility-pillar-card:hover .pillar-icon-circle {
+  background: var(--teal-primary);
+  color: #ffffff;
+}
+
+.pillar-title {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 2px;
+}
+
+.pillar-subtitle {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+}
+
+.visibility-cta-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 36px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Poster Modal */
+.poster-modal-card {
+  max-width: 820px;
+  padding: 24px;
+  text-align: center;
+}
+
+.poster-modal-img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* ==========================================================================
    FEATURE HIGHLIGHT SECTION (Matches Reference "Experience that grows...")
    ========================================================================== */
 .feature-section {
@@ -2414,6 +2781,40 @@ button, input, select, textarea {
     grid-template-columns: 1fr;
     gap: 32px;
   }
+
+  .visibility-hub-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .vital-center-col {
+    order: -1;
+  }
+
+  .vital-col-left,
+  .vital-col-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .vital-col-left .vital-callout-card,
+  .vital-col-right .vital-callout-card {
+    text-align: left;
+    flex-direction: row;
+  }
+
+  .vital-col-left .vital-text-wrap {
+    order: 2;
+  }
+
+  .vital-col-left .vital-icon-badge {
+    order: 1;
+  }
+
+  .visibility-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2670,6 +3071,62 @@ button, input, select, textarea {
   }
 
   /* Specs Section on Mobile */
+  /* Complete Clinical Visibility Section on Mobile */
+  .visibility-section {
+    padding: 60px 0;
+  }
+
+  .visibility-brand-title {
+    font-size: 28px;
+  }
+
+  .visibility-main-headline {
+    font-size: 23px;
+  }
+
+  .visibility-divider-tagline {
+    font-size: 13.5px;
+    gap: 8px;
+  }
+
+  .visibility-divider-tagline::before,
+  .visibility-divider-tagline::after {
+    width: 24px;
+  }
+
+  .vital-col-left,
+  .vital-col-right {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .visibility-device-halo-wrap {
+    padding: 10px;
+  }
+
+  .visibility-halo-ring {
+    width: 280px;
+    height: 280px;
+  }
+
+  .visibility-device-img {
+    width: 200px;
+  }
+
+  .visibility-pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .visibility-cta-bar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .visibility-cta-bar .btn {
+    width: 100%;
+  }
+
   .specs-section {
     padding: 60px 0;
   }
