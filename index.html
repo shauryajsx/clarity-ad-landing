@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recobro Vigile® | Portable ICU-Grade Wireless Telemetry Patient Monitor</title>
+  <meta name="description"
+    content="Clarity Medical's Recobro Vigile® is a 300g wearable, ICU-grade wireless patient monitor with 7 vitals (ECG, SpO2, NiBP, IBP, EtCO2), 24-hr battery, and real-time TeleICU streaming.">
+  <meta name="keywords"
+    content="patient monitor, teleicu, portable icu monitor, recobro vigile, clarity medical, wireless vitals telemetry, ambulance patient monitor, continuous vitals monitoring">
+
+  <!-- OpenGraph / Meta Ads -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Recobro Vigile® | Portable ICU-Grade Wireless Patient Monitor">
+  <meta property="og:description"
+    content="Continuous ICU monitoring with zero breaks from ambulance transit to bedside. CE 0123 certified, 24-hour battery, 2X lower OPEX.">
+  <meta property="og:image" content="assets/images/recobro-vigile-phone.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Recobro Vigile® | Tele ICU Patient Monitor">
+  <meta name="twitter:description" content="Real-time multi-parameter telemetry with MyTelePatient companion app.">
+  <meta name="twitter:image" content="assets/images/recobro-vigile-phone.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/clarity-logo.png">
+
+  <!-- Schema.org JSON-LD for Medical Device -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "MedicalDevice",
+    "name": "Recobro Vigile® Tele ICU Patient Monitor",
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "Clarity Medical Pvt. Ltd.",
+      "url": "https://www.clarity-medical.com"
+    },
+    "description": "Portable, ICU grade wearable wireless patient monitor with 7 vitals (ECG, SpO2, NiBP, IBP, EtCO2, Temp, Resp) and cloud TeleICU streaming.",
+    "weight": "300g",
+    "category": "Patient Monitoring System"
+  }
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       TOP ANNOUNCEMENT BAR
+       ========================================================================== -->
+  <div class="top-announcement">
+    <div class="container top-announcement-inner">
+      <div class="announcement-badges">
+        <span class="badge-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          CE 0123 (TÜV SÜD) & ISO 13485 Certified
+        </span>
+        <span style="color: #64748b;">|</span>
+        <span>Certified for Clinical Sale in Asia, Europe, Australia, UAE & Americas</span>
+      </div>
+      <div class="announcement-contact">
+        <span>Clinical Advisory Desk: <a href="tel:+919915716391">+91 99157 16391</a></span>
+        <span style="color: #64748b;">|</span>
+        <span>R&D Excellence Since 2003</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR (Faithful to Reference UI Topbar)
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand-wrapper">
+        <img src="assets/images/clarity-logo-official.jpg" alt="Clarity Medical Logo" class="brand-logo">
+        <div class="brand-divider"></div>
+        <div class="brand-product">
+          <span class="brand-product-name">Recobro Vigile<sup style="font-size: 10px;">®</sup></span>
+          <span class="brand-product-sub">Tele ICU Monitor</span>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#roi-bento">Clinical ROI</a></li>
+          <li><a href="#workflow">How It Works</a></li>
+          <li><a href="#comparison">Benchmark</a></li>
+          <li><a href="#deployment">Deployment</a></li>
+          <li><a href="#telepatient">App</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline btn-sm" onclick="downloadSpecBrochure()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Spec Sheet
+        </button>
+        <button class="btn btn-teal btn-sm open-quote-modal">
+          Request Quote
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </button>
+        <button class="mobile-menu-toggle" aria-label="Toggle Navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0b1523" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION (Matches Reference UI Split Layout with Floating Card)
+       ========================================================================== */ -->
+  <section class="hero-section" id="heroSection">
+    <div class="container hero-grid">
+
+      <!-- Hero Left Column -->
+      <div class="hero-content">
+        <div class="hero-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 14 14" />
+          </svg>
+          PORTABLE ICU-GRADE TELEMETRY
+        </div>
+
+        <h1 class="hero-title">
+          Real-Time Patient Telemetry <span class="highlight">At Your Fingertips.</span><br>
+          From Emergency Transit To <span class="highlight">The Doctor's Desk.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Recobro Vigile® is a 300g wearable patient monitor delivering comprehensive 7-parameter vitals (ECG, SpO2,
+          NiBP, IBP, EtCO2) and zero-latency wireless streaming to hospital doctors from ambulance to bedside.
+        </p>
+
+        <!-- Inline Lead Capture Form (Exact Reference UI Input + Teal Button) -->
+        <div class="hero-lead-box">
+          <form class="hero-input-group" id="heroLeadForm">
+            <input type="email" id="heroEmailInput" placeholder="Enter hospital / clinic email" required>
+            <button type="submit" class="btn btn-teal">
+              Get Demo & Quote
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+          </form>
+          <div class="form-feedback" id="heroFeedback"></div>
+        </div>
+
+        <!-- Trust Badges Under Input -->
+        <div class="hero-trust-bullets">
+          <span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            CE 0123 & ISO 13485
+          </span>
+          <span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            24h Battery Backup
+          </span>
+          <span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            2X Lower Hospital OPEX
+          </span>
+          <span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            300g Wearable Form
+          </span>
+        </div>
+
+        <!-- Client Social Proof Logos (Matches Reference "Klarna, coinbase, instacart") -->
+        <div class="hero-social-proof">
+          <div class="proof-label">Trusted by Premier Healthcare Networks & Emergency Fleets</div>
+          <div class="proof-logos-grid">
+            <img src="assets/images/client-aiims.png" alt="AIIMS">
+            <img src="assets/images/client-pgimer.png" alt="PGIMER">
+            <img src="assets/images/client-fortis.png" alt="Fortis Healthcare">
+            <img src="assets/images/client-max.png" alt="Max Healthcare">
+            <img src="assets/images/client-ntpc.png" alt="NTPC Hospitals">
+            <img src="assets/images/client-jnh.png" alt="JNH Healthcare">
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Right Column — Floating Card Mockup (Matches Reference Design) -->
+      <div class="hero-visual-card">
+
+        <!-- Card Top Bar: Live Status & Location -->
+        <div class="visual-card-topbar">
+          <div class="device-status-badge">
+            <span class="live-pulse-dot"></span>
+            LIVE TELEMETRY STREAMING
+          </div>
+          <div class="unit-location-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13" />
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+              <circle cx="5.5" cy="18.5" r="2.5" />
+              <circle cx="18.5" cy="18.5" r="2.5" />
+            </svg>
+            Fleet: NAFFCO Ambulance T853F
+          </div>
+        </div>
+
+        <!-- Center 3D Product Presentation -->
+        <div class="visual-device-showcase">
+          <img src="assets/images/recobro-vigile-phone.png" alt="Recobro Vigile Unit and MyTelePatient App"
+            class="main-product-img">
+        </div>
+
+        <!-- Interactive Real-Time ECG Monitor Oscilloscope Widget -->
+        <div class="floating-ecg-widget">
+          <div class="ecg-widget-header">
+            <span>LEAD II ECG WAVEFORM (1.0x GAIN • 25 mm/s)</span>
+            <span style="color: #10b981; font-weight: 700;">● ZERO LATENCY SYNC</span>
+          </div>
+          <div class="ecg-canvas-wrapper">
+            <canvas id="heroEcgCanvas"></canvas>
+          </div>
+
+          <!-- Real-time Physiological Vitals Numbers -->
+          <div class="floating-vitals-grid">
+            <div class="vital-mini-box">
+              <div class="vital-mini-label">HR (BPM)</div>
+              <div class="vital-mini-val green" id="liveHrVal">80</div>
+            </div>
+            <div class="vital-mini-box">
+              <div class="vital-mini-label">SpO₂ (%)</div>
+              <div class="vital-mini-val cyan" id="liveSpo2Val">98</div>
+            </div>
+            <div class="vital-mini-box">
+              <div class="vital-mini-label">NiBP (mmHg)</div>
+              <div class="vital-mini-val yellow">117/81</div>
+            </div>
+            <div class="vital-mini-box">
+              <div class="vital-mini-label">EtCO₂ (mmHg)</div>
+              <div class="vital-mini-val rose">38</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Bottom Specification Badge -->
+        <div class="floating-badge-bottom">
+          <div class="spec-badge-pill">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#10848f" stroke-width="2">
+              <rect x="1" y="6" width="18" height="12" rx="2" />
+              <line x1="23" y1="13" x2="23" y2="11" />
+            </svg>
+            Battery: <span>4,800 mAh (24h Full Load)</span>
+          </div>
+          <div class="spec-badge-pill">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#10848f" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+              <line x1="9" y1="9" x2="9.01" y2="9" />
+              <line x1="15" y1="9" x2="15.01" y2="9" />
+            </svg>
+            Net Weight: <span>300 Grams</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: THREE-PILLAR FEATURES (Matches Reference "Experience that grows...")
+       ========================================================================== -->
+  <section class="section feature-section" id="features">
+    <div class="container">
+
+      <div class="section-heading-row">
+        <div>
+          <span class="section-tag">CLINICAL ADVANTAGE</span>
+          <h2 class="section-title">Telemetry that eliminates<br>every monitoring blindspot.</h2>
+        </div>
+        <p class="section-subtitle">
+          Engineered to maintain continuous ICU-level precision through emergency transit, intensive care, step-down
+          wards, and post-discharge recovery.
+        </p>
+      </div>
+
+      <div class="features-three-col">
+
+        <!-- Pillar 1 -->
+        <div class="feature-pillar-card">
+          <div class="pillar-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+          </div>
+          <h3 class="pillar-title">Comprehensive 7-Parameter Vitals</h3>
+          <p class="pillar-desc">
+            Replaces bulky multi-module carts with a single 300g unit capturing full diagnostic physiological parameters
+            simultaneously.
+          </p>
+          <ul class="pillar-points">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              5-Lead Diagnostic ECG & Arrhythmia Detection
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              High-accuracy SpO2 & Pulse Rate
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              NiBP & Dual-Channel Invasive BP (IBP)
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Mainstream Infrared Capnography (EtCO2)
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="feature-pillar-card">
+          <div class="pillar-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="18" cy="5" r="3" />
+              <circle cx="6" cy="12" r="3" />
+              <circle cx="18" cy="19" r="3" />
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+            </svg>
+          </div>
+          <h3 class="pillar-title">Continuous Care — Zero Disconnect</h3>
+          <p class="pillar-desc">
+            Eliminates repeated sensor detachment. One single acquisition unit stays with the patient from field pickup
+            through the entire hospital stay.
+          </p>
+          <ul class="pillar-points">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Total patient mobility without tangled cables
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Smooth handoff: Ambulance ➔ OT ➔ ICU ➔ Ward
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Doctors & nurses walk freely around patient beds
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Adult, Pediatric & Neonatal probe support
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="feature-pillar-card">
+          <div class="pillar-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+            </svg>
+          </div>
+          <h3 class="pillar-title">Cloud CMS & MyTelePatient App</h3>
+          <p class="pillar-desc">
+            Streams vital data instantly to healthcare professionals via iOS, Android, and Windows with integrated video
+            consultation.
+          </p>
+          <ul class="pillar-points">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Real-time multi-patient central station display
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              One-tap parameter threshold & alarm adjustments
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Pre-hospital emergency transit alerts to ER
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Full CMS/HIM & hospital EMR export compatibility
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: BENTO GRID (Matches Reference "Why they prefer Finpay")
+       ========================================================================== -->
+  <section class="section bento-section" id="roi-bento">
+    <div class="container">
+
+      <div style="text-align: center; max-width: 600px; margin: 0 auto 50px;">
+        <span class="section-tag">VALUE PROPOSITION</span>
+        <h2 class="section-title">Why clinicians and hospitals choose Recobro Vigile</h2>
+      </div>
+
+      <div class="bento-grid">
+
+        <!-- Bento Card 1: Massive Battery Stat -->
+        <div class="bento-card">
+          <div class="bento-stat-num">24h+</div>
+          <div class="bento-stat-label">Continuous Battery Autonomy</div>
+          <p class="bento-stat-desc">
+            Powered by an ultra-dense 4,800 mAh Li-ion rechargeable cell. Operates continuously under full load with
+            NiBP cycles every 15 minutes — 2.5X longer than competing wireless monitors.
+          </p>
+          <div class="bento-badge-float">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            Zero shift battery swaps required
+          </div>
+        </div>
+
+        <!-- Bento Card 2: Wireless Sync Widget -->
+        <div class="bento-card">
+          <div class="bento-widget-content">
+            <div>
+              <div style="font-size: 20px; font-weight: 700; color: var(--text-dark); margin-bottom: 8px;">
+                Instant Dual-Channel Sync
+              </div>
+              <p style="font-size: 14.5px; color: var(--text-secondary); line-height: 1.6;">
+                Seamless automatic switching between Bluetooth BLE and High-Speed Wi-Fi ensures zero packet loss across
+                transit dead-zones.
+              </p>
+            </div>
+
+            <!-- Sync Visual Bridge Widget (Exact Match to Reference Icon Style) -->
+            <div class="widget-sync-visual">
+              <div class="sync-node">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+                  <line x1="4" y1="22" x2="4" y2="15" />
+                </svg>
+              </div>
+              <div class="sync-arrow-bridge">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+                <span>3G/4G/5G CLOUD</span>
+              </div>
+              <div class="sync-dest">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento Card 3: Financial ROI & Bed Multiplier (Span 2 Columns) -->
+        <div class="bento-card span-2">
+          <div class="bento-chart-wrapper">
+
+            <div class="chart-stat-display">
+              <div class="chart-stat-val">2X <span>Lower OPEX</span></div>
+              <div style="font-size: 19px; font-weight: 700; color: var(--text-dark); margin-bottom: 8px;">
+                Proven Bed Multiplier & Topline Expansion
+              </div>
+              <p style="font-size: 14.5px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px;">
+                The operational cost of legacy monitors outweighs their purchase price. Recobro Vigile keeps replacement
+                parts and operational overhead to a minimum while expanding hospital telemetry beds by 24%.
+              </p>
+              <div>
+                <button class="btn btn-teal btn-sm open-quote-modal">Calculate Institutional Savings →</button>
+              </div>
+            </div>
+
+            <!-- OPEX Comparison Visual Box -->
+            <div class="chart-canvas-box">
+              <div class="chart-header">
+                <span class="chart-header-title">5-Year Operating Expense (OPEX)</span>
+                <span class="chart-header-badge">-50% Cost Savings</span>
+              </div>
+
+              <div class="opex-bars">
+                <div class="opex-bar-item">
+                  <div class="bar-meta">
+                    <span>Conventional Legacy Bedside Monitors</span>
+                    <span style="color: #64748b;">$4,800/bed/yr</span>
+                  </div>
+                  <div class="bar-track">
+                    <div class="bar-fill-competitor"></div>
+                  </div>
+                </div>
+
+                <div class="opex-bar-item">
+                  <div class="bar-meta">
+                    <span style="font-weight: 700; color: #0f766e;">Recobro Vigile® TeleICU Architecture</span>
+                    <span style="font-weight: 700; color: #0f766e;">$2,400/bed/yr (2X Less)</span>
+                  </div>
+                  <div class="bar-track">
+                    <div class="bar-fill-recobro"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                style="margin-top: 16px; font-size: 12px; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 10px;">
+                *Includes maintenance, consumables, battery replacements, and multi-bed CMS licensing.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: SIGNATURE DEEP NAVY 3-STEP BANNER (Matches Reference UI Dark Card)
+       ========================================================================== -->
+  <section class="navy-steps-section" id="workflow">
+    <div class="container">
+
+      <div class="navy-container-card">
+
+        <div class="navy-heading-block">
+          <span class="section-tag dark">TELEICU ARCHITECTURE</span>
+          <h2 class="navy-title">Maximize patient safety with zero-latency telemetry.</h2>
+        </div>
+
+        <div class="navy-steps-grid">
+
+          <!-- Step 01 -->
+          <div class="navy-step-card">
+            <div class="step-large-num">01</div>
+            <h3 class="step-card-title">Clip & Wear</h3>
+            <p class="step-card-desc">
+              The 300g ergonomic unit connects comfortably with lightweight adult, pediatric, or neonatal sensors. The
+              patient is instantly liberated from wall cables.
+            </p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="navy-step-card">
+            <div class="step-large-num">02</div>
+            <h3 class="step-card-title">Dual-Channel Sync</h3>
+            <p class="step-card-desc">
+              Vitals stream continuously over secure Bluetooth to the MyTelePatient phone or directly via Wi-Fi to
+              hospital cloud servers with end-to-end encryption.
+            </p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="navy-step-card">
+            <div class="step-large-num">03</div>
+            <h3 class="step-card-title">Clinical Command</h3>
+            <p class="step-card-desc">
+              Attending specialists inspect live waveforms, adjust alarm parameters with a single tap, trigger remote
+              video consults, and push data to hospital EMRs.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: CLINICAL & COMMERCIAL METRIC PROOFS (Matches Reference UI)
+       ========================================================================== -->
+  <section class="metrics-section">
+    <div class="container">
+
+      <div class="metrics-header">
+        <span class="section-tag">PROVEN IMPACT</span>
+        <h2 class="metrics-title">Clinically proven across major hospitals & EMS fleets</h2>
+        <p class="metrics-sub">Certified for mission-critical care in over 20 countries worldwide.</p>
+      </div>
+
+      <div class="metrics-row">
+        <div class="metric-stat-item">
+          <div class="metric-big-number">24%</div>
+          <div class="metric-label-title">ICU Bed Capacity Expansion</div>
+        </div>
+
+        <div class="metric-stat-item">
+          <div class="metric-big-number">2X</div>
+          <div class="metric-label-title">Lower Operational Expense (OPEX)</div>
+        </div>
+
+        <div class="metric-stat-item">
+          <div class="metric-big-number">100%</div>
+          <div class="metric-label-title">Continuous Telemetry Coverage</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: COMPETITOR BENCHMARK TABLE (Extracted from PDF Slide 6)
+       ========================================================================== -->
+  <section class="section comparison-section" id="comparison">
+    <div class="container">
+
+      <div class="section-heading-row">
+        <div>
+          <span class="section-tag">COMPETITIVE BENCHMARK</span>
+          <h2 class="section-title">How Recobro Vigile outperforms<br>legacy telemetry units.</h2>
+        </div>
+        <p class="section-subtitle">
+          Direct technical comparison against leading global telemetry and wearable patient monitors. Verified by
+          independent clinical trials.
+        </p>
+      </div>
+
+      <div class="table-responsive-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th style="text-align: left; padding-left: 20px;">Device & Features</th>
+              <th>Philips IntelliVue MX40</th>
+              <th>Draeger Infinity M300</th>
+              <th>Mindray BeneVision TM-80</th>
+              <th>Berry PM6100</th>
+              <th>Stasis Monitor</th>
+              <th class="highlight-col">
+                Clarity Recobro Vigile
+                <div class="badge-winner">CATEGORY WINNER</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-cell-title">Pulse Oximetry (SpO₂)</td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td class="highlight-col"><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td class="feature-cell-title">Electrocardiogram (ECG)</td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="cross-icon">✗</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td class="highlight-col"><span class="check-icon">✓</span> (5-Lead)</td>
+            </tr>
+            <tr>
+              <td class="feature-cell-title">Non-Invasive BP (NiBP)</td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="cross-icon">✗</span></td>
+              <td><span class="cross-icon">✗</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td class="highlight-col"><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td class="feature-cell-title">Invasive Blood Pressure (IBP)</td>
+              <td><span class="cross-icon">✗</span></td>
+              <td><span class="cross-icon">✗</span></td>
+              <td><span class="cross-icon">✗</span></td>
+              <td><span class="cross-icon">✗</span></td>
+              <td><span class="cross-icon">✗</span></td>
+              <td class="highlight-col" style="font-weight: 800; color: #0d9488;"><span class="check-icon">✓</span>
+                (Dual Channel)</td>
+            </tr>
+            <tr>
+              <td class="feature-cell-title">Respiration (Resp)</td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="cross-icon">✗</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td class="highlight-col"><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td class="feature-cell-title">Body Temperature</td>
+              <td><span class="cross-icon">✗</span></td>
+              <td><span class="cross-icon">✗</span></td>
+              <td><span class="cross-icon">✗</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td class="highlight-col"><span class="check-icon">✓</span> (Dual Temp)</td>
+            </tr>
+            <tr>
+              <td class="feature-cell-title">Mainstream Capnography (EtCO₂)</td>
+              <td><span class="cross-icon">✗</span></td>
+              <td><span class="cross-icon">✗</span></td>
+              <td><span class="cross-icon">✗</span></td>
+              <td><span class="cross-icon">✗</span></td>
+              <td><span class="cross-icon">✗</span></td>
+              <td class="highlight-col" style="font-weight: 800; color: #0d9488;"><span class="check-icon">✓</span>
+                (Mainstream)</td>
+            </tr>
+            <tr>
+              <td class="feature-cell-title">Real-Time Wireless Telemetry</td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td class="highlight-col"><span class="check-icon">✓</span> (Cloud CMS)</td>
+            </tr>
+            <tr>
+              <td class="feature-cell-title">On-Device Color Display</td>
+              <td>2.8"</td>
+              <td>2.17"</td>
+              <td>3.5"</td>
+              <td>2.8"</td>
+              <td>None</td>
+              <td class="highlight-col" style="font-weight: 700;">2.4" TFT Color</td>
+            </tr>
+            <tr>
+              <td class="feature-cell-title">Battery Capacity</td>
+              <td>1,900 mAh</td>
+              <td>3.6 V</td>
+              <td>3,500 mAh</td>
+              <td>1,800 mAh</td>
+              <td>4,000 mAh</td>
+              <td class="highlight-col" style="font-weight: 800; color: #0d9488;">4,800 mAh (24h)</td>
+            </tr>
+            <tr>
+              <td class="feature-cell-title">Connectivity Modes</td>
+              <td>Wi-Fi Only</td>
+              <td>Wi-Fi Only</td>
+              <td>Wi-Fi Only</td>
+              <td>Bluetooth Only</td>
+              <td>Bluetooth Only</td>
+              <td class="highlight-col" style="font-weight: 700;">Bluetooth & Wi-Fi</td>
+            </tr>
+            <tr>
+              <td class="feature-cell-title">Net Unit Weight</td>
+              <td>280g</td>
+              <td>295g</td>
+              <td>229g</td>
+              <td>250g</td>
+              <td>&lt; 1,000g</td>
+              <td class="highlight-col" style="font-weight: 700;">300g</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: DEPLOYMENT MODELS (Matches Reference UI "Choose Plan" Cards)
+       ========================================================================== -->
+  <section class="deployment-section" id="deployment">
+    <div class="container">
+
+      <div style="text-align: center; max-width: 600px; margin: 0 auto 50px;">
+        <span class="section-tag">CLINICAL PACKAGES</span>
+        <h2 class="section-title">Deployment Models Built for Your Facility</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Select your care environment to view package specifications
+          and request pricing.</p>
+      </div>
+
+      <div class="plans-grid">
+
+        <!-- Model 1: Hospital TeleICU -->
+        <div class="plan-card">
+          <span class="plan-badge-top">HOSPITAL & INPATIENT</span>
+          <h3 class="plan-title">TeleICU Ward System</h3>
+          <p class="plan-desc">
+            Designed for ICU step-down units, post-op recovery, CCU, and general ward telemetry. Functions as an instant
+            bed multiplier without heavy infrastructural re-wiring.
+          </p>
+
+          <ul class="plan-features-list">
+            <li class="plan-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10848f" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Central Nursing Station CMS (32-bed simultaneous live view)
+            </li>
+            <li class="plan-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10848f" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Dual Wi-Fi and Bluetooth automatic failover
+            </li>
+            <li class="plan-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10848f" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              HL7 & FHIR hospital EMR integration
+            </li>
+            <li class="plan-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10848f" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Dedicated 24/7 biomedical engineering support & calibration
+            </li>
+          </ul>
+
+          <div class="plan-footer-row">
+            <div class="plan-price-label">Institutional Tier</div>
+            <button class="btn btn-outline btn-sm open-quote-modal">Request Ward Quote →</button>
+          </div>
+        </div>
+
+        <!-- Model 2: Emergency Response Fleet (Teal Card Highlight Matching Reference) -->
+        <div class="plan-card highlight">
+          <span class="plan-badge-top">EMERGENCY SERVICES & EMS</span>
+          <h3 class="plan-title">Emergency Fleet Solution</h3>
+          <p class="plan-desc">
+            Standard-issue equipment for ground ambulances, air evacuation, disaster medical camps, and inter-hospital
+            patient transfers.
+          </p>
+
+          <ul class="plan-features-list">
+            <li class="plan-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Pre-hospital real-time telemetry streaming to receiving ER
+            </li>
+            <li class="plan-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Ruggedized casing with 4,800 mAh 24-hr field battery
+            </li>
+            <li class="plan-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              MyTelePatient 4G/5G mobile gateway with video consult
+            </li>
+            <li class="plan-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Mainstream EtCO2 for critical intubated transit patients
+            </li>
+          </ul>
+
+          <div class="plan-footer-row">
+            <div class="plan-price-label" style="color: #ffffff;">Fleet Pricing</div>
+            <button class="btn btn-white btn-sm open-quote-modal">Request Fleet Quote →</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 8: MYTELEPATIENT APP SHOWCASE
+       ========================================================================== -->
+  <section class="app-section" id="telepatient">
+    <div class="container app-grid">
+
+      <div class="app-visual-phone">
+        <img src="assets/images/recobro-vigile-phone.png" alt="MyTelePatient Application on Smartphone">
+      </div>
+
+      <div class="app-content">
+        <span class="section-tag">COMPANION SOFTWARE</span>
+        <h2 class="section-title">MyTelePatient™ TeleICU Platform</h2>
+        <p class="section-subtitle" style="max-width: 100%;">
+          A multi-platform software suite (iOS, Android, and Windows) that transforms any connected smartphone or tablet
+          into a high-resolution ICU workstation.
+        </p>
+
+        <div class="app-feature-list">
+          <div class="app-feature-item">
+            <div class="app-icon-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 10l4.553-2.276A1 1 0 0 1 21 8.618v6.764a1 1 0 0 1-1.447.894L15 14v-4z" />
+                <rect x="3" y="6" width="12" height="12" rx="2" />
+              </svg>
+            </div>
+            <div>
+              <div class="app-feat-title">Integrated Video Calling</div>
+              <div class="app-feat-desc">Instant real-time video connection between bedside nurses, transit paramedics,
+                and offsite consulting physicians.</div>
+            </div>
+          </div>
+
+          <div class="app-feature-item">
+            <div class="app-icon-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+              </svg>
+            </div>
+            <div>
+              <div class="app-feat-title">Single-Tap Vitals Control</div>
+              <div class="app-feat-desc">Remotely trigger NiBP measurements, mute non-critical alarms, and set
+                customized alert thresholds with zero latency.</div>
+            </div>
+          </div>
+
+          <div class="app-feature-item">
+            <div class="app-icon-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+                <polyline points="10 9 9 9 8 9" />
+              </svg>
+            </div>
+            <div>
+              <div class="app-feat-title">Sharable Trend Reports</div>
+              <div class="app-feat-desc">Instantly export multi-hour ECG rhythm strips and vitals trends in PDF, CSV, or
+                HL7 for medical case audits.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-store-buttons">
+          <a href="https://apps.apple.com/us/app/mytelepatient/id1384819715?platform=iphone" target="_blank"
+            rel="noopener" class="app-badge-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-2 .6-2.65 1.35-.58.66-1.09 1.73-0.95 2.76 1.01.08 2.05-.51 2.68-1.26z" />
+            </svg>
+            <span>Download for iOS</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=mytelepatient.tele_patient" target="_blank"
+            rel="noopener" class="app-badge-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M3 20.5v-17c0-.83.67-1.5 1.5-1.5.38 0 .74.15 1.02.41L18.4 12 5.52 21.59c-.28.26-.64.41-1.02.41-.83 0-1.5-.67-1.5-1.5z" />
+            </svg>
+            <span>Download for Android</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 9: HIGH-CONVERTING BOTTOM CTA BANNER (Matches Reference UI Dark Banner)
+       ========================================================================== -->
+  <section class="bottom-cta-section">
+    <div class="container">
+
+      <div class="bottom-cta-banner">
+        <div class="cta-banner-text">
+          <h2 class="cta-banner-title">Ready to modernize your hospital's patient monitoring?</h2>
+          <p class="cta-banner-desc">
+            Equip your emergency fleet and inpatient wards with continuous, zero-break ICU telemetry. Request an
+            institutional trial unit and custom pricing today.
+          </p>
+        </div>
+
+        <div class="cta-banner-actions">
+          <button class="btn btn-teal btn-lg open-quote-modal">
+            Request Institutional Demo
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </button>
+          <button class="btn btn-outline btn-lg" onclick="downloadSpecBrochure()"
+            style="color: #ffffff; border-color: rgba(255,255,255,0.25);">
+            Download PDF Dossier
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       STICKY CONVERSION BAR (Appears on Scroll Past Hero)
+       ========================================================================== -->
+  <div class="sticky-conversion-bar" id="stickyConversionBar">
+    <div class="container sticky-bar-inner">
+      <div class="sticky-bar-info">
+        <img src="assets/images/clarity-logo-official.jpg" alt="Clarity Medical" style="height: 32px;"
+          class="brand-logo">
+        <span class="sticky-product-title">Recobro Vigile® TeleICU Monitor</span>
+        <span class="sticky-product-badge">CE 0123 Certified</span>
+      </div>
+
+      <div class="sticky-bar-actions">
+        <a href="tel:+919915716391" class="btn btn-outline btn-sm sticky-call-btn" style="display: flex; gap: 6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          <span class="call-text-full">+91 99157 16391</span>
+          <span class="call-text-mobile">Call Specialist</span>
+        </a>
+        <button class="btn btn-teal btn-sm open-quote-modal">
+          Request Quote
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       INTERACTIVE LEAD GENERATION & DEMO MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="leadQuoteModal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">✕</button>
+
+      <div class="modal-header">
+        <span class="section-tag" style="margin-bottom: 8px;">INSTITUTIONAL PRICING</span>
+        <h3 class="modal-title">Request Commercial Quote & Demo</h3>
+        <p class="modal-sub">Receive institutional volume pricing and schedule an in-person clinical trial at your
+          hospital.</p>
+      </div>
+
+      <form id="institutionalQuoteForm">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label" for="modalName">Full Name *</label>
+            <input type="text" id="modalName" class="form-control" placeholder="Dr. Sarah Sharma" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalHospital">Hospital / Facility *</label>
+            <input type="text" id="modalHospital" class="form-control" placeholder="Apollo / Max / Fortis" required>
+          </div>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label" for="modalEmail">Institutional Email *</label>
+            <input type="email" id="modalEmail" class="form-control" placeholder="doctor@hospital.org" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalPhone">Phone / Mobile *</label>
+            <input type="tel" id="modalPhone" class="form-control" placeholder="+91 98765 43210" required>
+          </div>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label" for="modalUnits">Units Required / Bed Count</label>
+            <select id="modalUnits" class="form-control">
+              <option value="1-5">1 - 5 Units (Evaluation / Ambulance)</option>
+              <option value="6-20">6 - 20 Units (Ward / ICU)</option>
+              <option value="21-50">21 - 50 Units (Hospital Wing)</option>
+              <option value="50+">50+ Units (Enterprise Fleet)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalApplication">Primary Application</label>
+            <select id="modalApplication" class="form-control">
+              <option value="Ambulance / EMS Transit">Ambulance & Transit EMS</option>
+              <option value="ICU / CCU Step-Down">ICU & CCU Step-Down</option>
+              <option value="Operating Theater (OT)">Operating Theater (OT)</option>
+              <option value="Home TeleICU & Remote">Home Healthcare & Remote Sites</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-top: 10px;">
+          <button type="submit" class="btn btn-teal btn-lg" style="width: 100%;">
+            Submit & Unlock Full Technical Dossier
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </button>
+        </div>
+
+        <div style="font-size: 11.5px; color: var(--text-muted); text-align: center; margin-top: 12px;">
+          🔒 HIPAA & GDPR Compliant. Your information is protected by Clarity Medical's clinical privacy policy.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ENTERPRISE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-top-grid">
+
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand-column">
+          <img src="assets/images/clarity-logo-official.jpg" alt="Clarity Medical" class="brand-logo"
+            style="height: 50px; width: auto; align-self: flex-start;">
+          <p class="footer-desc">
+            Clarity Medical Pvt. Ltd. has been pioneering advanced diagnostic and patient monitoring technology since
+            2003. Certified manufacturer of TeleICU solutions.
+          </p>
+          <div class="footer-cert-badges">
+            <span
+              style="font-size: 11px; font-weight: 700; color: #10848f; background: #e6f6f7; padding: 4px 8px; border-radius: 4px;">CE
+              0123</span>
+            <span
+              style="font-size: 11px; font-weight: 700; color: #10848f; background: #e6f6f7; padding: 4px 8px; border-radius: 4px;">ISO
+              13485</span>
+            <span
+              style="font-size: 11px; font-weight: 700; color: #10848f; background: #e6f6f7; padding: 4px 8px; border-radius: 4px;">TGA
+              Certified</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Solutions -->
+        <div>
+          <div class="footer-col-heading">Solutions</div>
+          <ul class="footer-col-links">
+            <li><a href="#features">Recobro Vigile® Monitor</a></li>
+            <li><a href="#telepatient">MyTelePatient™ Platform</a></li>
+            <li><a href="#deployment">Emergency Ambulance Fleet</a></li>
+            <li><a href="#deployment">Hospital Ward Telemetry</a></li>
+            <li><a href="#deployment">Central Nursing Station CMS</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Company & Compliance -->
+        <div>
+          <div class="footer-col-heading">Compliance</div>
+          <ul class="footer-col-links">
+            <li><a href="javascript:void(0)">TÜV SÜD CE 0123 Certification</a></li>
+            <li><a href="javascript:void(0)">TGA (Australia) Registration</a></li>
+            <li><a href="javascript:void(0)">SFDA Approved</a></li>
+            <li><a href="javascript:void(0)">Clinical Trial Results</a></li>
+            <li><a href="javascript:void(0)">Privacy & EMR Security</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Headquarters -->
+        <div>
+          <div class="footer-col-heading">Headquarters</div>
+          <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 12px;">
+            <strong>R&D / Mfg:</strong><br>
+            Plot No. 1687-A, JLPL Industrial Park, Sector 82, Mohali - 140306 (Punjab), India.<br>
+            <strong>Phone:</strong> +91 99157 16391 / +91 172 2970711<br>
+            <strong>Email:</strong> sales@clarity-medical.com
+          </p>
+          <p style="font-size: 12px; color: var(--text-muted); line-height: 1.5;">
+            <strong>European Authorized Rep:</strong><br>
+            Odd Sandbekkhang, Infinivell AS, 7099 Flatasen, Norway.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>© 2026 Clarity Medical Pvt. Ltd. All Rights Reserved. Recobro Vigile® is a registered trademark.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="javascript:void(0)">Privacy Policy</a>
+          <a href="javascript:void(0)">Terms of Service</a>
+          <a href="javascript:void(0)">Regulatory Disclosure</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
