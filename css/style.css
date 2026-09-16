@@ -1934,7 +1934,7 @@ button, input, select, textarea {
   }
 
   .navbar-inner {
-    height: 60px;
+    height: 66px;
     gap: 8px;
     width: 100%;
     justify-content: space-between;
@@ -1944,12 +1944,14 @@ button, input, select, textarea {
     gap: 6px;
     min-width: 0;
     flex-shrink: 1;
+    display: flex;
+    align-items: center;
   }
 
   .brand-logo {
-    height: 34px;
+    height: 44px;
     width: auto;
-    max-width: 120px;
+    max-width: 130px;
     object-fit: contain;
   }
 
@@ -2137,6 +2139,10 @@ button, input, select, textarea {
 }
 
 @media (max-width: 480px) {
+  .brand-logo {
+    height: 40px;
+  }
+
   .hero-title {
     font-size: 25px;
     line-height: 1.22;
