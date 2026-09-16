@@ -2,7 +2,8 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+const ROOT_DIR = path.resolve(__dirname, '..');
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=UTF-8',
@@ -22,12 +23,12 @@ const MIME_TYPES = {
 };
 
 const server = http.createServer((req, res) => {
-  let safePath = path.normalize(req.url).replace(/^(\.\.[\/\\])+/, '');
+  let safePath = path.normalize(req.url.split('?')[0]).replace(/^(\.\.[\/\\])+/, '');
   if (safePath === '/' || safePath === '\\') {
     safePath = '/index.html';
   }
 
-  const filePath = path.join(__dirname, safePath);
+  const filePath = path.join(ROOT_DIR, safePath);
 
   fs.stat(filePath, (err, stats) => {
     if (err || !stats.isFile()) {
@@ -50,5 +51,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}/`);
+  console.log(`Development server running at http://localhost:${PORT}/`);
 });

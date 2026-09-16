@@ -1934,7 +1934,7 @@ button, input, select, textarea {
   }
 
   .sticky-bar-inner {
-    padding: 0 16px;
+    padding: 0 14px;
     gap: 8px;
   }
 
@@ -1945,14 +1945,15 @@ button, input, select, textarea {
   .sticky-bar-actions {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1.25fr;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
   }
 
   .sticky-bar-actions .btn {
     width: 100%;
-    padding: 12px 10px;
-    font-size: 13.5px;
+    padding: 11px 6px;
+    font-size: 13px;
+    font-weight: 600;
     justify-content: center;
     border-radius: var(--radius-pill);
     white-space: nowrap;
@@ -1970,6 +1971,18 @@ button, input, select, textarea {
 
   .call-text-mobile {
     display: inline;
+  }
+
+  /* Modal Form on Mobile */
+  .modal-card {
+    padding: 24px 18px 20px;
+    width: 95%;
+    max-width: 480px;
+  }
+
+  .form-row-2 {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .hero-section {

@@ -1,0 +1,4 @@
+scripts/
+assets/screenshot*
+*.log
+.git
