@@ -99,6 +99,7 @@
           <li><a href="#roi-bento">Clinical ROI</a></li>
           <li><a href="#workflow">How It Works</a></li>
           <li><a href="#comparison">Benchmark</a></li>
+          <li><a href="#specs">Specs</a></li>
           <li><a href="#deployment">Deployment</a></li>
           <li><a href="#telepatient">App</a></li>
         </ul>
@@ -803,6 +804,393 @@
             </tr>
           </tbody>
         </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6.5: CLINICAL SPECIFICATIONS DEEP-DIVE (Interactive Tabbed Accordion)
+       ========================================================================== -->
+  <section class="specs-section" id="specs">
+    <div class="container">
+
+      <div class="specs-header-wrapper">
+        <span class="section-tag">BIOMEDICAL & TENDER DOSSIER</span>
+        <h2 class="section-title">Institutional Clinical Specifications</h2>
+        <p class="section-subtitle">
+          Engineered for stringent hospital procurement standards, biomedical tender compliance, and seamless clinical workflow integration.
+        </p>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="specs-tabs-nav" role="tablist" aria-label="Clinical Specifications Categories">
+        <button class="specs-tab-btn active" role="tab" aria-selected="true" data-tab="tab-vitals" id="btn-tab-vitals">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          Vitals & Sensors
+        </button>
+        <button class="specs-tab-btn" role="tab" aria-selected="false" data-tab="tab-telemetry" id="btn-tab-telemetry">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+          Telemetry & Connectivity
+        </button>
+        <button class="specs-tab-btn" role="tab" aria-selected="false" data-tab="tab-power" id="btn-tab-power">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="7" width="16" height="10" rx="2" ry="2"/><line x1="22" y1="11" x2="22" y2="13"/></svg>
+          Power & Form Factor
+        </button>
+        <button class="specs-tab-btn" role="tab" aria-selected="false" data-tab="tab-regulatory" id="btn-tab-regulatory">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Regulatory & Safety
+        </button>
+      </div>
+
+      <!-- Tab 1: Vitals & Sensors -->
+      <div class="specs-tab-panel active" id="tab-vitals" role="tabpanel" aria-labelledby="btn-tab-vitals">
+        <div class="specs-highlights-grid">
+          <div class="spec-highlight-card">
+            <div class="spec-highlight-label">ECG Diagnostic Range</div>
+            <div class="spec-highlight-value">3 / 5 Lead Selectable</div>
+            <div class="spec-highlight-sub">18 Arrhythmias + Real-time ST Analysis</div>
+          </div>
+          <div class="spec-highlight-card">
+            <div class="spec-highlight-label">SpO₂ Sensitivity</div>
+            <div class="spec-highlight-value">0.1% Perfusion Index</div>
+            <div class="spec-highlight-sub">Masimo/Nellcor Sensor Compatible</div>
+          </div>
+          <div class="spec-highlight-card">
+            <div class="spec-highlight-label">NiBP Deflation</div>
+            <div class="spec-highlight-value">Oscillometric Step</div>
+            <div class="spec-highlight-sub">Adult, Pediatric & Neonatal Modes</div>
+          </div>
+          <div class="spec-highlight-card">
+            <div class="spec-highlight-label">Advanced Extensions</div>
+            <div class="spec-highlight-value">Dual Temp, IBP, EtCO₂</div>
+            <div class="spec-highlight-sub">Mainstream & Microstream Capnography</div>
+          </div>
+        </div>
+
+        <div class="specs-detail-card">
+          <div class="specs-detail-header">
+            <div class="specs-detail-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10848f" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              Electrocardiography (ECG) & Heart Rate
+            </div>
+            <span class="specs-detail-badge">Diagnostic Grade</span>
+          </div>
+          <table class="specs-table">
+            <tbody>
+              <tr>
+                <td class="specs-param-name">Lead Configuration</td>
+                <td class="specs-param-value">
+                  <span class="specs-code-tag">3-Lead</span> (I, II, III) or <span class="specs-code-tag">5-Lead</span> (I, II, III, aVR, aVL, aVF, V). Standard AHA and IEC color codes supported.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Heart Rate Range & Accuracy</td>
+                <td class="specs-param-value">
+                  <strong>15 bpm – 350 bpm</strong> | Accuracy: ±1% or ±1 bpm (whichever is greater). Visual and audio pulse indication with QRS pitch modulation.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Arrhythmia & ST Detection</td>
+                <td class="specs-param-value">
+                  Automated detection of <strong>18 clinical arrhythmias</strong> (Asystole, V-Fib, V-Tach, Bigeminy, Trigeminy, Couplet, PVCs, Bradycardia, Tachycardia, Missed Beat, PACs). Multi-lead continuous ST-segment measurement (-2.0 mV to +2.0 mV).
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Defibrillation Protection</td>
+                <td class="specs-param-value">
+                  Withstands repeated <strong>5000V AC (360 Joules)</strong> defibrillator discharges with recovery time under 5 seconds. Integrated electrosurgical unit (ESU) cutting & coagulation noise filters.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Bandwidth & Sampling</td>
+                <td class="specs-param-value">
+                  Diagnostic: 0.05 Hz – 100 Hz | Monitoring: 0.5 Hz – 40 Hz | Surgical: 1.0 Hz – 20 Hz. Hardware sampling rate: <strong>500 Hz per channel</strong>.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="specs-detail-card">
+          <div class="specs-detail-header">
+            <div class="specs-detail-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10848f" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Pulse Oximetry (SpO₂) & Non-Invasive Blood Pressure (NiBP)
+            </div>
+            <span class="specs-detail-badge">High Sensitivity</span>
+          </div>
+          <table class="specs-table">
+            <tbody>
+              <tr>
+                <td class="specs-param-name">SpO₂ Measurement Range</td>
+                <td class="specs-param-value">
+                  <strong>0% – 100% SpO₂</strong> | Accuracy: ±2% (70% – 100%), unspecified below 70%. Pulse Rate: 25 – 250 bpm (±2 bpm).
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Low Perfusion Index (PI)</td>
+                <td class="specs-param-value">
+                  Accurate measurement down to <strong>0.1% Perfusion Index</strong>. Clinically validated for hypothermic, vasoconstricted, and shock-stage emergency transit patients.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">NiBP Operating Modes</td>
+                <td class="specs-param-value">
+                  Automatic Oscillometric Step-Down. Modes: <span class="specs-code-tag">Manual</span>, <span class="specs-code-tag">Auto Intervals</span> (1, 2, 3, 5, 10, 15, 30, 60, 90 mins), and <span class="specs-code-tag">Continuous STAT</span> (5-minute emergency cycle).
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">NiBP Pressure Range</td>
+                <td class="specs-param-value">
+                  Systolic: 40 – 270 mmHg | Diastolic: 10 – 215 mmHg | MAP: 20 – 235 mmHg. Static accuracy: ±3 mmHg. Dual independent software and hardware overpressure cut-off valves.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Temperature & Respiration</td>
+                <td class="specs-param-value">
+                  Dual-channel YSI-400 compatible probe (0°C – 50°C, ±0.1°C). Respiration via transthoracic impedance pneumography (0 – 150 rpm, ±1 rpm with apnea alarm).
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 2: Telemetry & Connectivity -->
+      <div class="specs-tab-panel" id="tab-telemetry" role="tabpanel" aria-labelledby="btn-tab-telemetry">
+        <div class="specs-highlights-grid">
+          <div class="spec-highlight-card">
+            <div class="spec-highlight-label">Wireless Protocols</div>
+            <div class="spec-highlight-value">Dual-Band Wi-Fi + BLE</div>
+            <div class="spec-highlight-sub">2.4 GHz & 5 GHz (802.11 b/g/n) + BLE 5.0</div>
+          </div>
+          <div class="spec-highlight-card">
+            <div class="spec-highlight-label">Cellular Gateway</div>
+            <div class="spec-highlight-value">4G LTE Auto-Failover</div>
+            <div class="spec-highlight-sub">Zero-drop transition for ambulance transit</div>
+          </div>
+          <div class="spec-highlight-card">
+            <div class="spec-highlight-label">Hospital EMR Standard</div>
+            <div class="spec-highlight-value">HL7 v2/v3 & FHIR</div>
+            <div class="spec-highlight-sub">Epic, Cerner & hospital HIS integration</div>
+          </div>
+          <div class="spec-highlight-card">
+            <div class="spec-highlight-label">Telemetry Latency</div>
+            <div class="spec-highlight-value">&lt; 300 ms Cloud Sync</div>
+            <div class="spec-highlight-sub">Real-time simultaneous doctor review</div>
+          </div>
+        </div>
+
+        <div class="specs-detail-card">
+          <div class="specs-detail-header">
+            <div class="specs-detail-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10848f" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+              Hospital Network & Radio Frequency Architecture
+            </div>
+            <span class="specs-detail-badge">Enterprise Ready</span>
+          </div>
+          <table class="specs-table">
+            <tbody>
+              <tr>
+                <td class="specs-param-name">Enterprise Wi-Fi Security</td>
+                <td class="specs-param-value">
+                  Supports <strong>WPA-PSK, WPA2-PSK, and WPA2/WPA3 Enterprise (802.1X, EAP-TLS, PEAP)</strong>. Seamless IEEE 802.11r roaming across hospital access points without telemetry drops.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Mobile Transit Gateway</td>
+                <td class="specs-param-value">
+                  Onboard high-sensitivity <strong>4G LTE multi-band cellular module</strong> (SIM / eSIM supported). Operates in ambulances, emergency helicopters, and remote satellite clinics.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Offline Store-and-Forward</td>
+                <td class="specs-param-value">
+                  Built-in <strong>72-hour non-volatile flash memory</strong> automatically records continuous vitals during network dead-zones (underground tunnels, rural highway corridors). Auto-uploads with zero data loss upon signal restoration.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">EMR / HIS Interoperability</td>
+                <td class="specs-param-value">
+                  Native <span class="specs-code-tag">HL7 v2.3/v2.5</span>, <span class="specs-code-tag">HL7 FHIR JSON</span>, and MQTT/REST WebSocket APIs. Direct automated charting into Epic, Cerner, Allscripts, Meditech, and bespoke hospital EMRs.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Central Monitoring CMS</td>
+                <td class="specs-param-value">
+                  Supports up to <strong>32 beds per nursing station console</strong> with dual-screen 4K output. Configurable visual (red/yellow/cyan) and audible alert hierarchies meeting IEC 60601-1-8 alarm standards.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 3: Power & Form Factor -->
+      <div class="specs-tab-panel" id="tab-power" role="tabpanel" aria-labelledby="btn-tab-power">
+        <div class="specs-highlights-grid">
+          <div class="spec-highlight-card">
+            <div class="spec-highlight-label">Device Weight</div>
+            <div class="spec-highlight-value">300 Grams</div>
+            <div class="spec-highlight-sub">Lightweight wearable patient holster</div>
+          </div>
+          <div class="spec-highlight-card">
+            <div class="spec-highlight-label">Continuous Runtime</div>
+            <div class="spec-highlight-value">24 Hours</div>
+            <div class="spec-highlight-sub">Continuous ECG, SpO2 & periodic NiBP</div>
+          </div>
+          <div class="spec-highlight-card">
+            <div class="spec-highlight-label">Charging Speed</div>
+            <div class="spec-highlight-value">90 Min Fast Charge</div>
+            <div class="spec-highlight-sub">80% battery capacity in 60 mins</div>
+          </div>
+          <div class="spec-highlight-card">
+            <div class="spec-highlight-label">Ingress Rating</div>
+            <div class="spec-highlight-value">IPX4 Protected</div>
+            <div class="spec-highlight-sub">Hospital disinfectant wipe resistant</div>
+          </div>
+        </div>
+
+        <div class="specs-detail-card">
+          <div class="specs-detail-header">
+            <div class="specs-detail-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10848f" stroke-width="2"><rect x="2" y="7" width="16" height="10" rx="2" ry="2"/><line x1="22" y1="11" x2="22" y2="13"/></svg>
+              Ergonomics, Enclosure & Battery Engineering
+            </div>
+            <span class="specs-detail-badge">Ruggedized Medical</span>
+          </div>
+          <table class="specs-table">
+            <tbody>
+              <tr>
+                <td class="specs-param-name">Physical Dimensions</td>
+                <td class="specs-param-value">
+                  <strong>145 mm (H) × 82 mm (W) × 32 mm (D)</strong>. Net unit weight: 300g (including high-capacity battery and all wireless transceivers).
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">On-Device Display</td>
+                <td class="specs-param-value">
+                  <strong>2.4-inch High-Brightness Color TFT LCD</strong> with scratch-resistant polycarbonate lens. Wide 160° viewing angle displaying real-time rhythm strips, numerical vitals, wireless signal, and battery gauge.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Battery Cell & Architecture</td>
+                <td class="specs-param-value">
+                  Medical-grade <strong>4,800 mAh Lithium-Ion battery</strong> with integrated smart BMS (Battery Management System). Protects against over-charge, over-discharge, short-circuit, and thermal runaway.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Hot-Swap Replacement</td>
+                <td class="specs-param-value">
+                  Quick-latch battery bay allows swapping batteries without losing ongoing patient telemetry or disconnecting sensor leads. Optional 4-bay institutional gang charger.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Transit Drop & Impact</td>
+                <td class="specs-param-value">
+                  Tested and certified for <strong>1.2-meter drop survival</strong> on hard flooring (MIL-STD-810G transit shock compliant). Impact-resistant medical ABS-polycarbonate alloy chassis.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Disinfection & Sterilization</td>
+                <td class="specs-param-value">
+                  Sealed IPX4 housing compatible with all standard hospital surface biocides: 70% Isopropyl Alcohol, 0.5% Sodium Hypochlorite (Bleach), Quaternary Ammonium wipes, and Hydrogen Peroxide vapor.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 4: Regulatory & Safety -->
+      <div class="specs-tab-panel" id="tab-regulatory" role="tabpanel" aria-labelledby="btn-tab-regulatory">
+        <div class="specs-highlights-grid">
+          <div class="spec-highlight-card">
+            <div class="spec-highlight-label">European Union</div>
+            <div class="spec-highlight-value">TÜV SÜD CE 0123</div>
+            <div class="spec-highlight-sub">Full Medical Device Directive (MDD/MDR)</div>
+          </div>
+          <div class="spec-highlight-card">
+            <div class="spec-highlight-label">Quality Management</div>
+            <div class="spec-highlight-value">ISO 13485:2016</div>
+            <div class="spec-highlight-sub">Certified medical manufacturer facility</div>
+          </div>
+          <div class="spec-highlight-card">
+            <div class="spec-highlight-label">Electrical Isolation</div>
+            <div class="spec-highlight-value">Type CF Defib-Proof</div>
+            <div class="spec-highlight-sub">Highest safety rating for direct cardiac contact</div>
+          </div>
+          <div class="spec-highlight-card">
+            <div class="spec-highlight-label">EMC Immunity</div>
+            <div class="spec-highlight-value">IEC 60601-1-2 4th Ed.</div>
+            <div class="spec-highlight-sub">Electrosurgical & mobile RF shielded</div>
+          </div>
+        </div>
+
+        <div class="specs-detail-card">
+          <div class="specs-detail-header">
+            <div class="specs-detail-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10848f" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Regulatory Accreditations & Hospital Electrical Safety Standards
+            </div>
+            <span class="specs-detail-badge">Tender Compliant</span>
+          </div>
+          <table class="specs-table">
+            <tbody>
+              <tr>
+                <td class="specs-param-name">CE Mark Accreditation</td>
+                <td class="specs-param-value">
+                  Notified Body: <strong>TÜV SÜD Product Service GmbH (CE 0123)</strong>. Certified for clinical deployment across European Union Member States, United Kingdom, Middle East, and CE-recognizing territories worldwide.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Quality System Certification</td>
+                <td class="specs-param-value">
+                  Manufactured under <strong>ISO 13485:2016</strong> (Medical Devices — Quality Management Systems) and <strong>ISO 9001:2015</strong>. Audited by international notified bodies.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Patient Safety Standards</td>
+                <td class="specs-param-value">
+                  Compliant with <strong>IEC 60601-1:2005+A1:2012</strong> (General Requirements for Basic Safety and Essential Performance). Patient leakage current: &lt; 10 µA (Normal condition), &lt; 50 µA (Single fault condition).
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Defibrillation Safety</td>
+                <td class="specs-param-value">
+                  <strong>Type CF Defibrillator-Proof applied parts</strong>. Certified safe for direct external cardiac defibrillation without sensor detachment or equipment damage.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Biocompatibility</td>
+                <td class="specs-param-value">
+                  All patient-contacting leads, cuffs, and probes conform to <strong>ISO 10993-5</strong> (Cytotoxicity) and <strong>ISO 10993-10</strong> (Irritation and Skin Sensitization). Latex-free and DEHP-free materials.
+                </td>
+              </tr>
+              <tr>
+                <td class="specs-param-name">Manufacturing Heritage</td>
+                <td class="specs-param-value">
+                  Manufactured in India by <strong>Clarity Medical Pvt. Ltd. (Est. 2003)</strong>. Over 20 years of OEM cardiology & patient monitoring R&D with installations across 500+ institutional hospitals globally.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tender Callout Box -->
+      <div class="specs-tender-callout">
+        <div class="specs-tender-text">
+          <h4>Evaluating for an Institutional Tender or Hospital Procurement RFP?</h4>
+          <p>Request our complete 38-page Technical Tender Dossier, compliance matrices, test reports, and factory calibration certificates.</p>
+        </div>
+        <div class="specs-tender-actions">
+          <button class="btn btn-teal btn-md open-quote-modal">
+            Request Technical Tender Dossier
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
       </div>
 
     </div>

@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initStickyBar();
   initSmoothScroll();
   initMobileMenu();
+  initSpecsTabs();
 });
 
 /* ==========================================================================
@@ -352,3 +353,43 @@ function initMobileMenu() {
     });
   }
 }
+
+/* ==========================================================================
+   6. CLINICAL SPECIFICATIONS TAB SWITCHER
+   ========================================================================== */
+function initSpecsTabs() {
+  const tabButtons = document.querySelectorAll('.specs-tab-btn');
+  const tabPanels = document.querySelectorAll('.specs-tab-panel');
+
+  if (!tabButtons.length || !tabPanels.length) return;
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetTabId = btn.getAttribute('data-tab');
+
+      // Update button active state & aria-selected
+      tabButtons.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+
+      // Update panels active state
+      tabPanels.forEach(panel => {
+        panel.classList.remove('active');
+      });
+
+      const activePanel = document.getElementById(targetTabId);
+      if (activePanel) {
+        activePanel.classList.add('active');
+      }
+
+      // Track interaction for analytics
+      if (typeof trackConversionEvent === 'function') {
+        trackConversionEvent('view_spec_tab', { tab_category: targetTabId });
+      }
+    });
+  });
+}
+
